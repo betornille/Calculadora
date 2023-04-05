@@ -21,10 +21,10 @@ int main(){
                        break;
                        default:
                    }
-                    
+                    printf("La suma total es: %.1f", SUMA);
                    }
                   
                 }
-    printf("La suma total es: %f", SUMA);
+    
     return 0;
 }
