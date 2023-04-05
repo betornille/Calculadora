@@ -7,8 +7,8 @@ int main(){
     scanf("%d", &P1);
         switch(P1){
             case 1:{ 
-            float SUMA=0, S, h;
-            int i;
+            float SUMA=0, S;
+            int i, h;
             printf("introduce la cantidad de números a sumar: ");
             scanf("%f", &S);
                 while(S<2){
