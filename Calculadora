@@ -12,7 +12,7 @@ int main(){
             printf("introduce la cantidad de números a sumar: ");
             scanf("%f", &S);
                 while(S<2){
-                printf("Introduce la Dos o más números:" );
+                printf("Introduce Dos o más números:" );
                 scanf("%f", &S);}
                    for(i=1; i<=S; i++){
                        printf("Digite su número a sumar: ");
