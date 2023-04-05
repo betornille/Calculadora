@@ -1,0 +1,30 @@
+//Calculadora
+#include<stdio.h>
+
+int main(){
+    int P1, RESTA=0, PRODUC=0, DIV=0;
+    printf("\nSuma: 1\nResta: 2\nMultiplicación: 3\nDivisión: 4\nIntroduce la opción aritmetica que desea: ");
+    scanf("%d", &P1);
+        switch(P1){
+            case 1:{ 
+            float SUMA=0, S, h;
+            int i;
+            printf("introduce la cantidad de números a sumar: ");
+            scanf("%f", &S);
+                while(S<2){
+                printf("Introduce la Dos o más números:" );
+                scanf("%f", &S);}
+                   for(i=1; i<=S; i++){
+                       printf("Digite su número a sumar: ");
+                       scanf("%f", &h);
+                       SUMA+=h;
+                       break;
+                       default:
+                   }
+                    
+                   }
+                  
+                }
+    printf("La suma total es: %f", SUMA);
+    return 0;
+}
