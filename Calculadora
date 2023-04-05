@@ -22,17 +22,19 @@ int main(){
                     printf("La suma total es: %.1f", SUMA);
                     break;
             case 2:
-            printf("introduce la cantidad de números a restar: ");
+             printf("introduce la cantidad de números a restar: ");
             scanf("%d", &R);
                 while(R<2){
                 printf("Introduce Dos o más números:" );
-                scanf("%d", &R);}
-                   for(i=1; i<=R; i++){
-                       printf("Digite su número a restar: ");
+                scanf("%d", &R); }
+                printf("Introduzca su número de mayor valor: ");
+                scanf("%f", &RESTA);
+                   for(i=2; i<=R; i++){
+                       printf("Digite su número(s) a restar: ");
                        scanf("%d", &j);
                        RESTA-=j;
                    }
-                   printf("La resta total es: %.1f", RESTA);
+                   printf("La resta total es: %.2f", RESTA);
                     break;
           }
     return 0;
