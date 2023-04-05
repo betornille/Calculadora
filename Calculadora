@@ -1,30 +1,28 @@
-//Calculadora
+//Calculadora analitica
 #include<stdio.h>
 
+
 int main(){
-    int P1, RESTA=0, PRODUC=0, DIV=0;
+    float SUMA=0, RESTA=0, PRODUC=0, DIV=0;
+    int i, h, S, P1;
     printf("\nSuma: 1\nResta: 2\nMultiplicación: 3\nDivisión: 4\nIntroduce la opción aritmetica que desea: ");
     scanf("%d", &P1);
         switch(P1){
-            case 1:{ 
-            float SUMA=0, S;
-            int i, h;
+            case 1: 
             printf("introduce la cantidad de números a sumar: ");
-            scanf("%f", &S);
+            scanf("%d", &S);
                 while(S<2){
                 printf("Introduce Dos o más números:" );
-                scanf("%f", &S);}
+                scanf("%d", &S);}
                    for(i=1; i<=S; i++){
                        printf("Digite su número a sumar: ");
-                       scanf("%f", &h);
-                       SUMA+=h;
-                       break;
-                       default:
+                       scanf("%d", &h);
+                       SUMA+=h;                     
                    }
                     printf("La suma total es: %.1f", SUMA);
+                    break;
+            case 2:
+                
                    }
-                  
-                }
-    
     return 0;
 }
