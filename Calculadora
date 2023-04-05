@@ -4,7 +4,7 @@
 
 int main(){
     float SUMA=0, RESTA=0, PRODUC=0, DIV=0;
-    int i, h, S, P1;
+    int i, h, S, P1, R, j;
     printf("\nSuma: 1\nResta: 2\nMultiplicación: 3\nDivisión: 4\nIntroduce la opción aritmetica que desea: ");
     scanf("%d", &P1);
         switch(P1){
@@ -17,12 +17,23 @@ int main(){
                    for(i=1; i<=S; i++){
                        printf("Digite su número a sumar: ");
                        scanf("%d", &h);
-                       SUMA+=h;                     
+                       SUMA+=h;
                    }
                     printf("La suma total es: %.1f", SUMA);
                     break;
             case 2:
-                
+            printf("introduce la cantidad de números a restar: ");
+            scanf("%d", &R);
+                while(R<2){
+                printf("Introduce Dos o más números:" );
+                scanf("%d", &R);}
+                   for(i=1; i<=R; i++){
+                       printf("Digite su número a restar: ");
+                       scanf("%d", &j);
+                       RESTA-=j;
                    }
+                   printf("La resta total es: %.1f", RESTA);
+                    break;
+          }
     return 0;
 }
