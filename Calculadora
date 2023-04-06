@@ -50,7 +50,7 @@ int main(){
                                }
                     printf("El producto de la multiplicación es: %.f", PRODUC);
                     break;
-            case 4:
+            case 4: //Solo para 2 números.
              printf("Introduce la primera cantidad a dividir: ");
              scanf("%f", &l);
              printf("Introduce la segunda cantidad a dividir: ");
