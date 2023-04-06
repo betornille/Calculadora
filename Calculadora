@@ -3,39 +3,51 @@
 
 
 int main(){
-    float SUMA=0, RESTA=0, PRODUC=0, DIV=0;
-    int i, h, S, P1, R, j;
-    printf("\nSuma: 1\nResta: 2\nMultiplicación: 3\nDivisión: 4\nIntroduce la opción aritmetica que desea: ");
+    float SUMA=0, RESTA=0, PRODUC=1, DIV=0;
+    int i, h, S, P1, R, j, P, k;
+    printf("\nSuma: 1\nResta: 2\nMultiplicación: 3\nDivisión: 4\nIntroduzca la opción aritmetica a operar: ");
     scanf("%d", &P1);
         switch(P1){
             case 1: 
             printf("introduce la cantidad de números a sumar: ");
             scanf("%d", &S);
                 while(S<2){
-                printf("Introduce Dos o más números:" );
-                scanf("%d", &S);}
-                   for(i=1; i<=S; i++){
-                       printf("Digite su número a sumar: ");
-                       scanf("%d", &h);
-                       SUMA+=h;
-                   }
+                        printf("Introduce 2 o más números:" );
+                        scanf("%d", &S);}
+                               for(i=1; i<=S; i++){
+                                   printf("Digite su número(s) a sumar: ");
+                                   scanf("%d", &h);
+                                   SUMA+=h;
+                               }
                     printf("La suma total es: %.1f", SUMA);
                     break;
             case 2:
-             printf("introduce la cantidad de números a restar: ");
+            printf("introduce la cantidad de números a restar: ");
             scanf("%d", &R);
                 while(R<2){
-                printf("Introduce Dos o más números:" );
-                scanf("%d", &R); }
-                printf("Introduzca su número de mayor valor: ");
-                scanf("%f", &RESTA);
-                   for(i=2; i<=R; i++){
-                       printf("Digite su número(s) a restar: ");
-                       scanf("%d", &j);
-                       RESTA-=j;
-                   }
-                   printf("La resta total es: %.2f", RESTA);
+                       printf("Introduce 2 o más números:" );
+                       scanf("%d", &R); }
+                       printf("Introduzca su número de mayor valor: ");
+                       scanf("%f", &RESTA);
+                               for(i=2; i<=R; i++){
+                                   printf("Digite su número(s) a restar: ");
+                                   scanf("%d", &j);
+                                   RESTA-=j;
+                                }
+                    printf("La resta total es: %.2f", RESTA);
                     break;
+            case 3:
+            printf("Introduce la cantidad de números a multiplicar: ");
+            scanf("%d", &P);
+                while(P<2){
+                    printf("Introduce 2 o más números: ");
+                    scanf("%d", &P);}
+                               for(i=1; i<=P; i++){
+                                  printf("introduzca su número(s) a multiplicar: "); 
+                                  scanf("%d", &k);
+                                  PRODUC*=k;
+                               }
+                    printf("El producto de la multiplicación es: %.f", PRODUC);
           }
     return 0;
-}
+}  
